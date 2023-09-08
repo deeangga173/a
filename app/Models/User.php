@@ -35,7 +35,7 @@ class User extends Authenticatable
 ];
     // User.php (Model User)
     public function userExperience(): HasMany{
-        return $this->hasMany(UserExperience::class, "user_id", "id");
+        return $this->hasMany(UserExperience::class);
     }
     public function userQualification(): HasMany{
         return $this->hasMany(UserQualification::class);
